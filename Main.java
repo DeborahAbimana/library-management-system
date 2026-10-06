@@ -1,13 +1,21 @@
-
 public class Main {
 
 public static void main(String[] args) {
 
-StipendEligible student1 =new UndergraduateStudent("Deborah", 3.8);
+        // Create a Publisher
+ Publisher publisher = new Publisher("John", 101, 501);
 
-StipendEligible student2 =new GraduateStudent("Hope", 10, 1200);
-System.out.println("Deborah's monthly stipend: $"+ student1.calculateMonthlyStipend());
+        // Create a Book
+ Book book = new Book("Java Fundamentals", 1001, publisher);
 
-System.out.println("Hope's monthly stipend: $"+ student2.calculateMonthlyStipend());
+  // Create a Student
+  Student student = new Student("Deborah", 102, 202);
+// Create a Librarian
+        Librarian librarian = new Librarian("Alice", 103, 303);
+// Print the objects
+System.out.println(publisher);
+System.out.println(book);
+System.out.println(student);
+System.out.println(librarian);
     }
 }
